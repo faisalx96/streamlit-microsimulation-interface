@@ -17,7 +17,7 @@ def create_card(title, description, image_path, page_name):
         st.session_state.page = page_name
         st.rerun()
 
-# tesssst
+# tesss
 
 
 def sidebar_custom_slider(label, min_value, max_value, value, key, min_label, max_label):
