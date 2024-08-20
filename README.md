@@ -1,4 +1,4 @@
-# Population Projection App
+# Microsimulation Engine App
 
 This Streamlit application generates population projections using AI.
 
