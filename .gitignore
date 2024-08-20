@@ -1,0 +1,22 @@
+# Ignore configuration file with sensitive information
+config.yaml
+
+# Python-related
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+
+# IDE-related
+.vscode/
+.idea/
+
+# Operating system-related
+.DS_Store
+Thumbs.db
+
+# Streamlit-related
+.streamlit/
