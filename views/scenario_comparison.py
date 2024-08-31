@@ -2,6 +2,7 @@ import streamlit as st
 from utils.data_processing import filter_data, get_combination
 from utils.plots import plot_population_projection, plot_population_composition
 
+
 def show_comparison_mode(df, combination1, combination2):
     # st.subheader("Scenario Comparison")
     

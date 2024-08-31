@@ -4,20 +4,19 @@ import streamlit as st
 def create_card(title, description, image_path, page_name):
     card_html = f"""
     <div class="card">
-        <img src={image_path}>
+        <img src="{image_path}" alt="{title}" class="card-image">
         <div class="card-content">
             <div class="card-title">{title}</div>
             <div class="card-description">{description}</div>
         </div>
     </div>
     """
+
     st.markdown(card_html, unsafe_allow_html=True)
 
     if st.button("", key=f"button_{page_name}", use_container_width=True):
         st.session_state.page = page_name
         st.rerun()
-
-# tesss
 
 
 def sidebar_custom_slider(label, min_value, max_value, value, key, min_label, max_label):

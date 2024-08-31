@@ -38,13 +38,14 @@ def plot_population_projection(df, show_base_projection, is_generated=False):
         xaxis=dict(
             showgrid=False,
             tickmode='array',
-            tickvals=list(range(2024, 2101, 10)),
+            tickvals=[2024] + list(range(2030, 2101, 10)),
             tickangle=0,
             tickfont=dict(size=14)
         ),
         yaxis=dict(title='Population', showgrid=False, tickfont=dict(size=14))
     )
     return fig
+
 
 def plot_population_composition(all_df, year, title):
     df = all_df[all_df['Year'] == year]
