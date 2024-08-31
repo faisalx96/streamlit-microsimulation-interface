@@ -12,7 +12,7 @@ def filter_data(df, comb):
 
 
 def get_combination(asmr, asfr):
-    return f"asmr_{asmr}_asfr_{-asfr}"
+    return f"asmr_{-asmr}_asfr_{-asfr}"
 
 
 def format_number(num):

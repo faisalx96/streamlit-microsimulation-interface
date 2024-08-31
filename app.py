@@ -3,6 +3,10 @@ from views import welcome, population
 
 
 def main():
+
+    # Set page config for a wider layout
+    st.set_page_config(layout="wide")
+
     if 'page' not in st.session_state:
         st.session_state.page = "welcome"
 
